@@ -1,32 +1,142 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
-
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
+    <title>Development Report</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
+      <h1>Development Assignment!</h1>
+      <h3>:D</h3>
     </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
+    <hr />
+    <div id="Overview">
+      <h1>Overview</h1>
+      <p>
+        I love music, and I love the different ways different music platforms have different favoriting functions, or different ways to add songs to playlists. 
+        By observing different websites and looking at what functions I liked from each one, I was able to incorporate some of these functions in a website where the user can add their favorite songs to a number of playlists. 
+      </p>
+      <p>
+        Through using React, the website created can be found 
+        <a href="https://development-orcin-eight.vercel.app/">here!</a>
+      </p>
+    </div>
+    <div id="part1">
+      <h1>Competitive Comparison</h1>
+      <p>
+        To begin, I first looked at three other sites, and from these sites i
+        evaluted what functions each one had and how it could add to the user
+        experience. Below is the comparison chart I made from them.
+      </p>
+      <div class="photos">
+        <img
+          alt="image of a table where Edstem, Spotify, and Apple Music are being compared"
+          src="./assets/comparison-chart.jpg"
+        />
+      </div>
+      <p>The three websites I chose have very different ways to filter and sort through their items. The favoriting functions are also different. While Spotify and Apple Music all store the favorite songs in a playlist and are easily accessible, Ed Stem only allows users to filter out any posts that are favorited. EdStem also has a very clear way to filter out posts. The visual presence of the filters is very clear to see. While Spotify and Apple Music both have ways to explicitly search for songs, the ability to filter is not available, and while Spotify has ways to filter on their mobile app, it is not the most visible, or the most intuitive way to filter. I did notice that Spotify and Apple Music have similar ways of sorting, where at the top of each column you click to sort through the column alphabetically, and so on, however, I did like how you can combine the sorting functions in Spotify. 
+</p>
+
+      <p>
+
+        From these websites, I chose to include features that made the filtering and sorting options very visible, and intuitive. I also included the functionality to combine these so that users can have a less frustrating experience searching for a song. 
+       
+      </p>
+      <p>
+        From these I decided to implement the design of changing the button whether the post, or the item was favorited or not. Thus letting the user know that it was added and that it can be removed with the same button. 
+      </p>
+    </div>
+    <div id="part2">
+      <h1>Planning</h1>
+      <h2>Lofi Sketches</h2>
+      <p>
+        Since I knew the theme of the website would be music, I first decided if I wanted the aggregator to be a favoriting fuction, or an add to playlist function. I ultimately decided to have it be an add to playlist function.
+        From there I drew the following lo-fi sketches of layouts that I could use for the website. 
+      </p>
+      <div class="photos">
+        <img
+          alt="image of lo-fi sketches"
+          src="./assets/lo-fi-1.jpg"
+        />
+        <img
+          alt="image of lo-fi sketches"
+          src="./assets/lo-fi-2.jpg"
+        />
+        
+        
+      </div>
+      <div class="photos">
+        <img
+          alt="image of lo-fi sketches"
+          src="./assets/lo-fi-3.jpg"
+        />
+        <img
+          alt="image of lo-fi sketches"
+          src="./assets/lo-fi-4.jpg"
+        />
+        
+        
+      </div>
+      <p>I then created this last final sketch which I could create a higher fidelity prototype out of.</p>
+        <img
+          alt="image sketch that has more effort put into it than the lo-fi sketches"
+          src="./assets/med.jpg"
+        />
+      <h2>Style Guide</h2>
+      <p>
+        From there I decided what colors I would use by using the online source <a href="https://coolors.co/fecee9-eb9fef-545677-03254e-011c27">here.</a> I also chose fonts by using the online source <a href="https://www.monotype.com/font-pairing#/playground?fontPair1=Utopia&fontPair2=Franklin+Gothic+SG">here.</a>
+      </p>
+      <div class="photos">
+        <img
+          alt="image of a figma frame with different colors, icons, fonts, and other design elements that can be seen on a style guide."
+          src="./assets/style_guide.jpg"
+        />
+      </div>
+      <h2>Hi-fi Prototype</h2>
+      <p>After creating the style guide, and having the final sketch I made a high fidelity prototype in figma this is what it looks like.</p>
+      <div class="photos">
+        <img
+          alt="screenshot of figma frame that is the high fidelity prototype."
+          src="./assets/hi-fi-figma.jpg"
+        />
+        
+      </div>
+    </div>
+    <div id="part3">
+      <h1>React</h1>
+      <p>
+        While I do feel more comfortable using HTML and CSS, adding react was a bit difficult. I have a grasp on how to use react, but using some react elements like the dropdowns, made it a bit more difficult for me to use CSS with them. From this experience I do want to learn more about CSS and make it so that I can customize just about any part of a website that uses react. 
+      </p>
+      <div class="photos">
+        <img
+          src="./assets/real-website.jpg"
+          alt="screenshot of the actual page!"
+        />
+      </div>
+
+      <p>
+        Because I wanted to have users make a playlist, I added two filters. One would filter the songs by artist, and the other would filter the songs by genre. Since most people have a favorite artist, or seem to know what kind of artists they like, and the same can be said for the genre of songs, this felt the most natural way to filter song choices.
+      </p>
+
+      <p>For sorting through the songs I made it so that there is a way to alphabetically sort for titles and artists, and then I also chose to sort by song length. Chosing to sort alphabetically for titles and artists felt most intuitve for me since many other music platforms have that feature, and I added in the sorting by length so that if a person want to have a decently shorter, or longer, playlist they could choose songs that best fit that requirement. </p>
+    </div>
+    <div>
+      <h1>Conclusion</h1>
+      <p>
+        I feel like I learned a lot from this project. I was able to get a lot
+        of practice using react, and I was also able to practice my CSS skills. I'm still not quite satisfied at my skill level with CSS or react, and I hope to become more proficient at using them with smaller projects. 
+        Again, to start making playlists go to this website 
+        <a href="https://development-orcin-eight.vercel.app/">here!</a>
+      </p>
     </div>
   </body>
-
 </html>
